@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="weather.css">
+
+    <title>Weather</title>
+</head>
+<body>
+   
+   
+     <div class = "container">
+        <h1 class = "text-center mt-5">Weather Result</h1><br>
+
+        <form id = "cityform" autocomplete ="off" >
+            <div class="form-group">
+
+                <label for="city">City Name</label>
+                <input  class = "form-control" type="text" id ="city">
+
+            </div>
+            <div class="form-group">
+                <button class = "btn btn-danger btn-block">
+                    Search
+                </button>
+            </div>
+        </form>
+        <div id = "result">
+
+        </div>
+
+
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1" id = "Clouds">
+                <img src="cloud.jpg" alt=""><br>
+                <h5>Clouds</h5>
+            </div>
+
+            <div class="flexbox-item flexbox-item-2" id = "CoOrd">
+                <img src="coord.jpg" alt=""><br>
+                <h5>CoOrd</h5>
+            </div>
+
+            <div class="flexbox-item flexbox-item-3" id = "Main">
+                <img src="main.jpg" alt=""><br>
+                <h5>Main</h5>
+            </div>
+
+            <div class="flexbox-item flexbox-item-4" id = "Weather">
+                <img src="weather.jpg" alt=""><br>
+                <h5>Weather</h5>
+            </div>
+
+            <div class="flexbox-item flexbox-item-5" id = "Wind">
+                <img src="wind.jpg" alt=""><br>
+                <h5>Wind</h5>
+            </div>
+            
+        </div>
+
+     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="weather.js"></script>
+
+    
+</body>
+</html>
